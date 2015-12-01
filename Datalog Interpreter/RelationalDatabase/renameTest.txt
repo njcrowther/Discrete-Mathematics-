@@ -1,0 +1,16 @@
+Schemes:
+  SK(A,B)
+  J(C,D)
+Facts:
+  SK('a','c').
+  SK('b','c').
+  SK('b','b').
+  SK('b','c').
+  J('a','c').
+  J('a','b').
+  J('b','c').
+  J('b','b').
+Rules:
+  J(X,Y) :- SK(D,C).
+Queries:
+  SK(C,D)?
